@@ -1,0 +1,45 @@
+﻿@model AutoDrivingCarSimulationApplication.Models.CarSimulationInput
+@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    ViewData["Direction"] = "Direction";
+}
+<form asp-action="Index">
+<div>
+        <h3 class="text-center">Auto Driving Car Simulation Details</h3>
+        <p>
+            <label>Width:</label>
+            <input style="margin-left:20px" type="number" asp-for="Width"/>
+        </p>
+        <p>
+            <label>Height:</label>
+            <input style="margin-left:20px" type="number" asp-for="Height" />
+        </p>
+        <p>
+            <label>Car Current Position:</label>
+            <input style="margin-left:20px" type="text" asp-for="CurrentPosition" />
+        </p>
+        <p>
+            <label>Car Facing Direction:</label>
+            <select style="margin-left:20px" asp-for="FacingDirection" asp-items="Html.GetEnumSelectList<Direction>()"></select>
+        </p>
+        <p>
+            <label>Commands:</label>
+            <input style="margin-left:20px" type="text" asp-for="Commands" />
+        </p>
+        <p>
+            <input type="submit" value="Run" asp-for="Opr" />
+        </p>
+        <div>
+            <h3>Result:</h3>
+            <label>Car Position:</label>
+            <p><input style="margin-left:20px" type="text" asp-for="@ViewData["Positionresult"]" /></p>
+            <label>Facing Direction:</label>
+            <p><input style="margin-left:20px" type="text" asp-for="@ViewData["Directionresult"]" /></p>
+        </div>
+        @Html.ValidationSummary(false,"",new{@class="text-danger"})
+</div>
+</form>
+
+

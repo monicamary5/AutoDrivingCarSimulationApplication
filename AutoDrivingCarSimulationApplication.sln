@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoDrivingCarSimulationApplication", "AutoDrivingCarSimulationApplication\AutoDrivingCarSimulationApplication.csproj", "{0537B198-DD30-45A4-ABE9-AED8C06596A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nunit.CarSimulation.Test", "Nunit.Demo.Test\Nunit.CarSimulation.Test.csproj", "{F76258DE-03E2-4916-A29F-C28D2415EBCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0537B198-DD30-45A4-ABE9-AED8C06596A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0537B198-DD30-45A4-ABE9-AED8C06596A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0537B198-DD30-45A4-ABE9-AED8C06596A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0537B198-DD30-45A4-ABE9-AED8C06596A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F76258DE-03E2-4916-A29F-C28D2415EBCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76258DE-03E2-4916-A29F-C28D2415EBCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76258DE-03E2-4916-A29F-C28D2415EBCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76258DE-03E2-4916-A29F-C28D2415EBCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88FDAE07-C72C-4ADB-86B2-F24315B6DD45}
+	EndGlobalSection
+EndGlobal
